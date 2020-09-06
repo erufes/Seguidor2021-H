@@ -213,17 +213,6 @@ Wire Wire Line
 	5700 1700 5700 1900
 $Comp
 L Device:C C?
-U 1 1 5F02A3CB
-P 10350 5500
-F 0 "C?" H 10200 5600 50  0000 L CNN
-F 1 "C" H 10200 5400 50  0000 L CNN
-F 2 "" H 10388 5350 50  0001 C CNN
-F 3 "~" H 10350 5500 50  0001 C CNN
-	1    10350 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
 U 1 1 5F02B931
 P 10350 6200
 F 0 "C?" H 10200 6300 50  0000 L CNN
@@ -247,13 +236,9 @@ Wire Wire Line
 Connection ~ 10350 5950
 Wire Wire Line
 	10350 5950 10650 5950
-Wire Wire Line
-	10350 5750 10350 5650
 Connection ~ 10350 5750
 Wire Wire Line
 	10350 5750 10650 5750
-Wire Wire Line
-	10350 5350 10350 5250
 Connection ~ 10350 5250
 Wire Wire Line
 	10350 5250 10300 5250
@@ -566,7 +551,7 @@ $EndComp
 Connection ~ 1150 6350
 Wire Wire Line
 	1150 6350 1500 6350
-Text HLabel 950  2100 1    50   Input ~ 0
+Text HLabel 950  2050 1    50   Input ~ 0
 Enable
 Text HLabel 7400 2000 0    50   Input ~ 0
 OutMosfet
@@ -1013,10 +998,6 @@ Connection ~ 1850 6350
 Wire Wire Line
 	2200 6350 2550 6350
 Connection ~ 2200 6350
-Text HLabel 1150 7250 3    50   Input ~ 0
-PortaDigital1
-Text HLabel 1500 7250 3    50   Input ~ 0
-PortaDigital2
 Text HLabel 1850 7250 3    50   Input ~ 0
 PortaDigital3
 Text HLabel 2200 7250 3    50   Input ~ 0
@@ -1043,6 +1024,52 @@ F 1 "+3.3V" V 9550 3800 50  0000 L CNN
 F 2 "" H 9550 3700 50  0001 C CNN
 F 3 "" H 9550 3700 50  0001 C CNN
 	1    9550 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	950  2150 950  2100
+Wire Wire Line
+	950  2100 950  2050
+Connection ~ 950  2100
+$Comp
+L power:GND #PWR?
+U 1 1 5F574261
+P 650 2150
+F 0 "#PWR?" H 650 1900 50  0001 C CNN
+F 1 "GND" V 655 2022 50  0000 R CNN
+F 2 "" H 650 2150 50  0001 C CNN
+F 3 "" H 650 2150 50  0001 C CNN
+	1    650  2150
+	0    1    1    0   
+$EndComp
+Text HLabel 1500 7250 3    50   Input ~ 0
+PortaDigital2
+Text HLabel 1150 7250 3    50   Input ~ 0
+PortaDigital1
+Wire Wire Line
+	10350 5350 10350 5250
+Wire Wire Line
+	10350 5750 10350 5650
+$Comp
+L Device:C C?
+U 1 1 5F02A3CB
+P 10350 5500
+F 0 "C?" H 10200 5600 50  0000 L CNN
+F 1 "C" H 10200 5400 50  0000 L CNN
+F 2 "" H 10388 5350 50  0001 C CNN
+F 3 "~" H 10350 5500 50  0001 C CNN
+	1    10350 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F55E191
+P 800 2150
+F 0 "R?" V 1007 2150 50  0000 C CNN
+F 1 "R" V 916 2150 50  0000 C CNN
+F 2 "" V 730 2150 50  0001 C CNN
+F 3 "~" H 800 2150 50  0001 C CNN
+	1    800  2150
 	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
