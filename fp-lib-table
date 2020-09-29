@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name POLOLU-713)(type KiCad)(uri ${KIPRJMOD}/Bibliotecas/POLOLU-713)(options "")(descr ""))
+)
