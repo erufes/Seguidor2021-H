@@ -11,4 +11,4 @@ O projeto usa como base o KiCad, programa open-source de desenvlvimento de circu
 
 Site da ERUS: http://www.erus.ufes.br/
 Site do projeto de Software: https://github.com/hdogithub/Seguidor2021-S
-Site do KiCad: https://kicad-pcb.org/
+Site do KiCad: [-]
